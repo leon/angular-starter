@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-block">
+    <ngx-charts-bar-vertical
+      [results]="data"
+      [scheme]="colorScheme"
+      [xAxis]="true"
+      [yAxis]="true"
+      [legend]="true"
+      [showXAxisLabel]="true"
+      [xAxisLabel]="xAxisLabel"
+      [showYAxisLabel]="true"
+      [yAxisLabel]="yAxisLabel"
+      (select)="onSelect($event)"
+    >
+    </ngx-charts-bar-vertical>
+  </div>
+</div>

@@ -7,7 +7,9 @@ import { SalesService, SalesData } from './sales.service';
   styles: [`
     :host {
       display: block;
-      width: 100%;
+    }
+    
+    .chart {
       height: 300px;
     }
   `]
@@ -20,7 +22,7 @@ export class SalesComponent {
     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
   };
 
-  yAxisLabel = 'Population';
+  yAxisLabel = 'Sales';
   xAxisLabel = 'Country';
 
   constructor(private salesService: SalesService) {
